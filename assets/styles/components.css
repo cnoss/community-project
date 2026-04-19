@@ -7,7 +7,7 @@
   .title {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: clamp(1.2rem, 10vw + 1rem, 30rem);
+    font-size: clamp(1.2rem, 6vw + 1rem, 18rem);
     color: var(--headline-color);
     line-height: 90%;
     margin-bottom: var(--space-m);
@@ -17,6 +17,18 @@
   &.is-small {
     .title {
       font-size: clamp(1.5rem, 5vw + 1rem, 20rem);
+    }
+  }
+
+  /* Alle Seiten außer Home: deutlich kleinerer Titel */
+  body:not([data-layout="home"]) & {
+    .title {
+      font-size: clamp(1.5rem, 3vw + 1rem, 6rem);
+    }
+
+    .header-stage {
+      height: auto;
+      min-height: 30vh;
     }
   }
 
