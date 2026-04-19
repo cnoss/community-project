@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+.sass-cache/
+_site/
+.jekyll-cache/
+
+# Actions API (lokale Secrets)
+.env

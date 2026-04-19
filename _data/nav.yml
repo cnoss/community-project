@@ -1,0 +1,5 @@
+- url: /
+  name: Home
+
+- url: aktionen/
+  name: Aktionen

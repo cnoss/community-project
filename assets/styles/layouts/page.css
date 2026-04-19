@@ -1,0 +1,15 @@
+[data-layout="page"] {
+  hr{
+    margin: 3rem 0;
+  }
+
+  p{
+    line-height: var(--lh-loose);
+  }
+
+  pre{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: var(--fluid-space-m);
+    margin-bottom: var(--fluid-space-m);
+  }
+}

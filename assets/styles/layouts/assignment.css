@@ -1,0 +1,22 @@
+/* Assignment
+-------------------------------------------------------------- */
+
+[data-layout="assignment"] {
+  .is-important {
+    max-width: calc(var(--max-width-content) * 1.2);
+    font-size: var(--size-l);
+    line-height: var(--lh-loose);
+    margin-top: var(--fluid-space-m);
+    margin-bottom: var(--fluid-space-m);
+  }
+
+  .is-medium{
+    max-width: var(--max-width-content);
+  }
+
+  h4{
+    font-size: var(--size-l);
+    color: var(--color-darkest);
+    margin-top: var(--fluid-space-xs);
+  }
+} 

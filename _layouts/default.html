@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="{{ site.name }} – {{ site.description }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/styles/combined-styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+
+  <script src="{{ site.baseurl }}/assets/libs/gsap/dist/gsap.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/libs/gsap/dist/ScrollTrigger.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/libs/gsap/dist/SplitText.min.js"></script>
+  <script defer src="{{ site.baseurl }}/assets/js/eyecandy.js"></script>
+
+</head>
+
+<body data-url="{{page.url}}" data-layout="{{page.layout}}">
+  <header class="main-header {{page.headerClass}} {{layout.headerClass}}">
+    <a href="{{ site.baseurl }}/" class="nav-logo"><img src="{{ site.baseurl }}/assets/images/box.png" alt="Logo der Medieninformatik an der TH Köln: eine schöne Kiste voller Möglichkeiten"></a>
+    
+    <nav class="main-navigation" data-js-menu-state="menu-is-closed">
+      <button class="menu-button" data-js-menu aria-label="Menü Button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navigation-list">
+        {% for item in site.data.nav %}
+        {% if item.url contains "http" %}
+        <li><a class="nav-item" href="{{item.url}}">{{item.name}}</a></li>
+        {% else %}
+        <li><a class="nav-item" href="{{ site.baseurl }}/{{item.url}}">{{item.name}}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="header-stage">
+      <h1 class="title">Community<br>Projekt<br><span class="is-black"> 2026</span></h1>
+      <h2 class="subtitle">{{ site.description }}</h2>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer class="main-footer is-non-print">
+    <div class="content">
+      <ul class="nav-list">
+        {% for item in site.data.nav %}
+        {% if item.url contains "http" %}
+        <li><a class="nav-item" href="{{item.url}}">{{item.name}}</a></li>
+        {% else %}
+        <li><a class="nav-item" href="{{ site.baseurl }}/{{item.url}}">{{item.name}}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+      <p markdown="1">Modulseite zum Modul **Community Projekt** im [Studiengang Medieninformatik
+        Bachelor](https://www.th-koeln.de/studium/medieninformatik-bachelor_2379.php) der [TH
+        Köln](https://www.th-koeln.de/hochschule/impressum_8159.php). Verantwortlicher Dozent ist [Prof. Christian
+        Noss](https://github.com/cnoss).</p>
+
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.3/showdown.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/community-projekt.js"></script>
+
+</body>
+
+</html>

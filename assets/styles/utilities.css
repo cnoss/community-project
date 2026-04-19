@@ -1,0 +1,39 @@
+.is-black{
+  color: var(--color-dark);
+}
+
+.is-blue{
+  color: var(--color-blue);
+}
+
+.has-edit-button{
+  display: flex;
+
+  justify-content: space-between;
+
+  a{
+    border: none;
+    &:hover{
+      background: none !important;
+      color: var(--color-interaction) !important;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    a{display: none;}
+    
+  }
+}
+
+/* Is Sticky
+############################################################################ */
+
+.is-sticky{
+  position: sticky;
+  top: var(--space-m);
+  background-color: var(--color-lighter);
+
+  padding-bottom: var(--fluid-space-s);
+  z-index: 100;
+  border-bottom: solid 1px var(--color-light);
+}

@@ -1,0 +1,74 @@
+/* Home
+############################################################################ */
+
+
+.main-header {
+
+  .title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: clamp(1.2rem, 10vw + 1rem, 30rem);
+    color: var(--headline-color);
+    line-height: 90%;
+    margin-bottom: var(--space-m);
+    hyphens: auto;
+  }
+
+  .subtitle {
+    margin-top: 0;
+  }
+
+  .header-stage {
+    height: 80vh;
+    padding: var(--fluid-space-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.is-small {
+    .header-stage {
+      padding-top: var(--fluid-space-xxl);
+      padding-bottom: var(--fluid-space-xxl);
+      height: auto;
+      min-height: 50%;
+    }
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-width: 4rem;
+    margin-top: var(--fluid-space-xs);
+    margin-left: var(--fluid-space-xs)
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--fluid-space-s);
+    padding: var(--fluid-space-xs);
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: var(--space-s);
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-item {
+    padding: var(--quarter);
+  }
+
+
+}

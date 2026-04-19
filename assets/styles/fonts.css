@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Rubic;
+  font-style: normal;
+  font-weight: 100 900; 
+  src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: asap;
+  font-style: normal;
+  font-weight: 100 900; 
+  src: url("../fonts/Asap/Asap-VariableFont_wdth\,wght.ttf");
+}
+
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
+    url('../fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
+}

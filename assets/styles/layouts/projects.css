@@ -1,0 +1,75 @@
+/* Projects Overview Styles
+ ############################################################################ */
+
+
+/* project-year-group Styles
+ ############################################################################ */
+
+.project-year-group {
+
+  margin-bottom: var(--fluid-space-xxl);
+
+  .project-title {
+    font-size: var(--size-xl);
+    max-width: var(--max-width-content);
+    text-wrap: balance;
+    margin-bottom: 0;
+  }
+
+  .project-year {
+    font-size: var(--size-xl);
+    margin-top: 0;
+    margin-bottom: var(--fluid-space-xs);
+    color: var(--color-darken);
+  }
+
+  .project-desc {
+    max-width: var(--max-width-content);
+    margin-bottom: var(--fluid-space-m);
+    text-wrap: balance;
+    line-height: var(--lh-loose);
+  }
+}
+
+/* Project List Styles
+ ############################################################################ */
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--max-width-content) / 2), 1fr));
+  gap: var(--fluid-space-xs);
+
+  .project-item {
+
+    /* border-radius: var(--r10-1); */
+    /* background-color: var(--color-lighten); */
+    overflow: hidden;
+    /* box-shadow: var(--shadow-m); */
+    transition: transform var(--tr-fast);
+
+    /* padding: var(--space-s);      */
+    &:hover {
+      transform: scale(1.05);
+
+    }
+
+    img {
+      aspect-ratio: 4/3;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      border-bottom: solid 2px transparent;
+      border: solid 1px var(--color-darken);
+    }
+
+    figcaption {
+      color: var(--color-darkest);
+      padding: var(--space-xs) 0;
+      line-height: var(--lh-tight);
+      text-wrap: balance;
+      font-weight: var(--fw-light);
+    }
+  }
+}

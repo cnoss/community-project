@@ -1,0 +1,43 @@
+.hero-head {
+  display: none;
+  ;
+}
+
+.content{
+  img.eyecandy, [data-eyecandy="image-fade-in"]{
+    opacity: 0.2;
+    transform: scale(0.2);
+    will-change: opacity, transform;
+  }
+}
+
+.main-footer{
+  background-color: var(--color-lightest);
+  & > * {
+    margin: var(--fluid-space-m);
+  }
+
+  a{
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: color var(--tr-fast);
+    border-bottom: none;
+    transition: all var(--tr-fast) ease;
+    
+
+    &:hover{
+      padding-left: var(--quarter);
+      padding-right: var(--quarter);
+    }
+  }
+
+  .content{
+  @media screen and (min-width: 90rem) {
+      display: grid;
+      grid-template-columns: 33% 2fr;
+      gap: var(--space-m);
+  }
+  }
+
+}
+
