@@ -10,6 +10,8 @@ titel: Aktionen
   <p>
   Nutzen Sie die Suche und die Filter, um Aktionen zu finden, die zu Ihnen passen – zu Ihren Interessen, Ihrem Zeitbudget oder dem Wirkungskreis, den Sie anstreben. Und wenn Ihnen etwas fehlt: Beim Aktionsbasar haben Sie zweimal im Semester die Chance, eigene Vorschläge einzubringen.  
   </p>
+
+  <p>Die Aktionen werden auf einem [Issue Board in Gitlab](https://git-ce.rwth-aachen.de/micgn/community-game/community-game-core/-/boards/4816) gepflegt und verwaltet.</p>
 </div>
 
 <div id="actions-root" data-js-actions data-actions-endpoint="https://www.medieninformatik.th-koeln.de/api/community-project-data-proxy.php">
